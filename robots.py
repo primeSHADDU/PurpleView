@@ -25,3 +25,50 @@ def get_robots_txt(domain):
     print("\n--- Parsed Summary ---\n")
 
     parse_robots(content)
+
+def parse_robots(content):
+    current_agent = None
+    rules = {}
+    sitemaps = []
+
+    for line in content.splitlines():
+        line = line.split('#', 1)[0].strip()  # strip comments
+        if not line:
+            continue
+
+        if ':' not in line:
+            continue
+
+        key, value = line.split(':', 1)
+        key = key.strip().lower()
+        value = value.strip()
+
+        if key == 'user-agent':
+            current_agent = value
+            rules.setdefault(current_agent, {'disallow': [], 'allow': []})
+        elif key == 'disallow' and current_agent:
+            rules[current_agent]['disallow'].append(value)
+        elif key == 'allow' and current_agent:
+            rules[current_agent]['allow'].append(value)
+        elif key == 'sitemap':
+            sitemaps.append(value)
+        elif key == 'crawl-delay' and current_agent:
+            rules[current_agent]['crawl-delay'] = value
+
+    for agent, r in rules.items():
+        print(f"User-agent: {agent}")
+        if r['disallow']:
+            print(f"  Disallow: {r['disallow']}")
+        if r['allow']:
+            print(f"  Allow: {r['allow']}")
+        if 'crawl-delay' in r:
+            print(f"  Crawl-delay: {r['crawl-delay']}")
+        print()
+
+    if sitemaps:
+        print(f"Sitemaps: {sitemaps}")
+
+
+if _name_ == '_main_':
+    domain = input("Enter domain (e.g. example.com): ").strip()
+    get_robots_txt(domain)
