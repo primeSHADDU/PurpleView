@@ -69,6 +69,6 @@ def parse_robots(content):
         print(f"Sitemaps: {sitemaps}")
 
 
-if __name__ == '_main_':
+if __name__ == '__main__':
     domain = input("Enter domain (e.g. example.com): ").strip()
     get_robots_txt(domain)
