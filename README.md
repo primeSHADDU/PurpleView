@@ -1,11 +1,11 @@
-# 🛡️ Attack Surface Mapper  
+# 🛡️ Purple View
 Passive Reconnaissance Tool for Penetration Testing | Project Based Learning (TCS332)
 
 ---
 
-## 📖 Overview
+## 📖 Over View
 The **Attack Surface Mapper** is a command-line reconnaissance utility designed to help penetration testers understand a target website before any active testing begins.  
-It performs **passive information gathering only** — collecting publicly accessible data such as HTTP headers, cookies, robots.txt, sitemap.xml, JavaScript files, HTML forms, and discoverable URLs.  
+It performs **passive information gathering only** collecting publicly accessible data such as HTTP headers, cookies, robots.txt, sitemap.xml, JavaScript files, HTML forms, and discoverable URLs.  
 
 Findings are automatically checked against security best practices (e.g., CSP, HSTS, X-Frame-Options) to highlight potential misconfigurations.
 
