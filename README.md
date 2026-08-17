@@ -72,10 +72,13 @@ A working **CLI tool** that:
 
 ---
 
-| Snapshot | Description |
-|----------|-------------|
-| ![Input](assets/input.png) | User entering domain in CLI |
-| ![Output](assets/output.png) | Parsed robots.txt rules |
+## 📸 Demo Snapshots
+
+### Input Example
+![User Input](assets/input.png)
+
+### Output Example
+![Parsed robots.txt Output](assets/output.png)
 
 ---
 
