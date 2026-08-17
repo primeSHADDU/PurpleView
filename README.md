@@ -75,11 +75,12 @@ A working **CLI tool** that:
 ## 🚀 How to Run
 ```bash
 # Clone the repository
-git clone https://github.com/<your-repo>/attack-surface-mapper.git
-cd attack-surface-mapper
+git clone https://github.com/primeSHADDU/PurpleView.git
+cd PurpleView
 
-# Install dependencies
-pip install -r requirements.txt
+# Install dependencies (if applicable)
+npm install   # or pip install -r requirements.txt
 
-# Run the tool
-python3 mapper.py --target https://example.com
+# Run locally
+npm start     # or python app.py
+
