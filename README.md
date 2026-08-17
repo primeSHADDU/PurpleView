@@ -72,6 +72,13 @@ A working **CLI tool** that:
 
 ---
 
+| Snapshot | Description |
+|----------|-------------|
+| ![Input](assets/input.png) | User entering domain in CLI |
+| ![Output](assets/output.png) | Parsed robots.txt rules |
+
+---
+
 ## 🚀 How to Run
 ```bash
 # Clone the repository
