@@ -83,14 +83,11 @@ A working **CLI tool** that:
 ---
 
 ## 🚀 How to Run
+
 ```bash
 # Clone the repository
 git clone https://github.com/primeSHADDU/PurpleView.git
-cd PurpleView
+cd PurpleView/Modules
 
-# Install dependencies (if applicable)
-npm install   # or pip install -r requirements.txt
-
-# Run locally
-npm start     # or python app.py
-
+# Run the script directly (no extra dependencies needed)
+python robots.py
