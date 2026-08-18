@@ -1,6 +1,9 @@
 # 🛡️ Purple View
 Passive Reconnaissance Tool for Penetration Testing | Project Based Learning (TCS332)
 
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/primeSHADDU/PurpleView)
+![GitHub last commit](https://img.shields.io/github/last-commit/primeSHADDU/PurpleView)
+
 ---
 
 ## 📖 Over View
